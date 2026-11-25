@@ -1,0 +1,21 @@
+{
+  "workspace": "~/zackon_build_up",
+  "ros_setup": "/opt/ros/jazzy/setup.bash",
+  "maps_directory": "src/view_robot/maps",
+  "selected_map": "",
+  "nav2_command": "ros2 launch view_robot_pkg NAV2_BRINGUP.launch.py map:={map}",
+  "nav2_opens_rviz": true,
+  "rviz_command": "rviz2",
+  "mapping_command": "ros2 launch view_robot_pkg MAP_GENERATING.launch.py",
+  "map_save_command": "ros2 run nav2_map_server map_saver_cli -f {output}",
+  "odom_topic": "/odomfromSTM32",
+  "front_scan_topic": "/front_lidar/scan",
+  "rear_scan_topic": "/rear_lidar/scan",
+  "pose_topic": "/amcl_pose",
+  "map_topic": "/map",
+  "map_frame": "map",
+  "base_frame": "base_link",
+  "navigate_action": "/navigate_to_pose",
+  "arbiter_state_topic": "/velocity_arbiter/state",
+  "emergency_stop_topic": "/velocity_arbiter/emergency_stop"
+}
